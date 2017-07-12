@@ -81,7 +81,7 @@ class App extends Component {
         console.log('*send stuff to server*');
 
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "http://localhost:9000/posthere");
+        xhr.open("GET", "http://localhost:9000/posthere");
         xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         xhr.send(JSON.stringify(state));
         xhr.onreadystatechange = () => {
