@@ -1,0 +1,31 @@
+{
+  "userId": 0,
+  "currency":  "rub",
+  "lists": [
+    {
+      "id": 0,
+      "isPinned": false,
+      "title": "Some sample list",
+      "sortByTitle": 0,
+      "sortByPrice": 0,
+      "sortByCompletion": 0,
+      "tasks": [
+        {
+          "id": 0,
+          "title": "Dog food",
+          "description": "Gotta be tasty i guess",
+          "tags": [
+            "food",
+            "dog",
+            "stuff-for-home",
+            "nofilter"
+          ],
+          "link": "www.dog.com",
+          "quantity": 2,
+          "price": 150.5,
+          "isCompleted": false
+        }
+      ]
+    }
+  ]
+}

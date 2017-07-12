@@ -1,0 +1,89 @@
+.task.completed {
+    opacity: .6;
+    text-decoration: line-through;
+}
+
+
+.task-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding : .2em;
+    transition: background-color .15s ease-in-out;
+}
+.task.expanded .task-header, .task-header:hover {
+    background-color: #eaeaea;
+}
+.link-icon {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    margin-left: .2em;
+    background-image: url(img/link.png);
+    background-size: contain;
+    transform: translateY(0.1em);
+    opacity: .8;
+    cursor: pointer;
+}
+.link-icon:hover {
+    opacity: .9;
+}
+.link-icon:active {
+    opacity: 1;
+}
+
+.task-header-right {
+    display: flex;
+}
+
+.task-header-right img {
+    height: 1.3em;
+    margin-left: .5em;
+    opacity: .6;
+}
+.task-header-right img:hover {
+    opacity: .8;
+}
+.task-header-right img:active {
+    opacity: 1;
+}
+
+.task-full {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s ease-in-out;
+}
+
+.task.expanded .task-full {
+    max-height: 200px;
+}
+
+.task-full .description,
+       .task-full .link {
+    display: block;
+    outline: none;
+    border: none;
+    resize: none;
+    width : 100%;
+    background-color: #eaeaea;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: .2rem;
+    margin: .5em 0;
+}
+
+.task input.name, .task input.quantity, .task input.price {
+    outline: none;
+    border: none;
+    font-size: 1.3rem;
+    font-family: 'Open Sans', sans-serif;
+    width: 20rem;
+}
+
+.task input.quantity {
+    width: 3.6rem;
+}
+
+.task input.price {
+    width: 7.2rem;
+}

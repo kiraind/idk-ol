@@ -1,0 +1,211 @@
+.list-body {
+    min-width: 900px;
+    width: 45vw;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-left: 2.8em;
+}
+
+.list-header {
+    width: 100%;
+    min-height: 2.8em;
+    background-color: #507299;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.remove-list-button {
+    background-image: url(img/delete.png);
+    background-size: cover;
+}
+.pin-list-check {
+    background-image: url(img/unpinned.png);
+    background-size: cover;
+}
+
+.list-title {
+    color: white;
+    font-size: 1.4em;
+    max-width: calc(90% - 5.6em);
+    min-width: 50px;
+    text-align: center;
+    margin: .2em 0;
+}
+
+.list-title-input {
+    display: block;
+    outline: none;
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4em;
+    max-width: calc(90% - 5.6em);
+}
+.pin-list-check.checked {
+    background-image: url(img/pinned.png);
+}
+.pin-list-check, .remove-list-button {
+    align-self: stretch;
+    width: 2.8em;
+    max-height: 2.8em;
+}
+.pin-list-check:hover, .remove-list-button:hover {
+    background-color: rgba(255, 255, 255, 0.07);
+}
+.pin-list-check:active, .remove-list-button:active {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.list-content {
+    padding: 1.4em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: calc(100% - 6.425rem);
+    font-size: 1.3em;
+}
+
+.list-ui {
+    background-color: #507299;
+    display: flex;
+    border-radius: 3px;
+    margin-bottom: .5em;
+    overflow: hidden;
+}
+
+.list-text {
+    border: none;
+    outline: none;
+    background-color: #e0e0e0;
+    font-size: 1.3em;
+    padding: .1em .4em;
+    width: 100%;
+    transition: width .2s ease-in-out;
+}
+
+.list-ui-button {
+    display: inline-block;
+    overflow: hidden;
+    color: white;
+    height: 0;
+    width: 0;
+    transition: width .2s ease-in-out;
+    font-size: 1.3em;
+    padding: 0.113835em 0;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.list-ui.add .list-text {
+    width: 90%;
+}
+.list-ui.add .list-ui-button {
+    width: 10%;
+    height: auto;
+}
+.list-ui-button:hover {
+    background-color: rgba(255, 255, 255, 0.07);
+}
+.list-ui-button:active {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.list-filters {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e0e0e0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    margin-bottom: .2em;
+}
+.name-sort, .price-sort, .complete-sort {
+    height: 2rem;
+    width: 3rem;
+    background-size: contain;
+    opacity: .8;
+}
+.name-sort:hover, .price-sort:hover, .complete-sort:hover {
+    opacity: 1;
+}
+.name-sort {
+    background-image: url(img/name-sort-off.png);
+    margin-left: 0.3em;
+}
+.name-sort.bottom {
+    background-image: url(img/name-sort.png);
+}
+
+.price-sort {
+    margin-left: auto;
+    margin-right: 1.36rem;
+    background-image: url(img/price-sort.png);
+}
+.price-sort.top {
+    background-image: url(img/price-sort-top.png);
+}
+.price-sort.bottom {
+    background-image: url(img/price-sort-bottom.png);
+}
+
+.complete-sort {
+    background-image: url(img/complete-sort.png);
+}
+.complete-sort.off {
+}
+
+/*                                            NEW TASK                                     */
+.newtask-header {
+    display: flex;
+    justify-content: space-between;
+    padding : .2em;
+    background-color: #e0e0e0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    margin-top: .2em;
+}
+.newtask-header .name {
+    outline: none;
+    border: none;
+    font-size: 1.3rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: .2rem;
+    width: 20rem;
+    border-bottom-left-radius: 4px;
+}
+.newtask-header .quantity, .newtask-header .price {
+    outline: none;
+    border: none;
+    width: 3.6rem;
+    font-size: 1.3rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: .2rem;
+}
+
+.newtask-header-right {
+    display: flex;
+}
+
+.newtask-header-right .add {
+    width: 3.1em;
+    margin: -.2em;
+    margin-left: .5em;
+    opacity: 1;
+    color: white;
+    background-color: #5b7ea7;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newtask-header-right .add:hover {
+    opacity: .9;
+}
+.newtask-header-right .add:active {
+    opacity: 1;
+}

@@ -1,0 +1,48 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#root>div {
+    height: 100vh;
+}
+
+body {
+    
+    margin: 0;
+    overflow-y: hidden;
+    height: 100%;
+    background-color: #eaeaea;
+}
+
+.header-gap {
+    height: 2.8168em;
+}
+
+main {
+    height: calc(100% - 5.6em);
+    display: flex;
+    overflow-y: hidden;
+    padding: 1.4em 0;
+}
+
+.right-gap {
+    min-width: 2.8em;
+}
+
+.newlist-button {
+    min-width: 450px;
+    width: 22.5vw;
+    background-color: white;
+    margin-left: 2.8em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    background-image: url(img/new.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    opacity: .5;
+    transition: opacity .1s ease-in-out;
+}
+.newlist-button:hover {
+    opacity: 1;
+}
